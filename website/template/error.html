@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Error page</title>
+        <style>
+            body{
+                color: red;
+                background-color: white;
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <center><h1>Invalid Entry!</h1></center>
+        {% csrf_token %}
+        {% load static %}
+        <center><img src="{% static 'rick.gif' %}" alt="rick rolled" style="width: 500px;height:250px;" ></center>
+    </body>
+</html>

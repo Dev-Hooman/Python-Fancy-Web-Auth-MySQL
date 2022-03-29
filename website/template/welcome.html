@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Welcome Page</title>
+    <style>
+        body{
+            background-color: rgb(240, 235, 235);
+            color: rgb(241, 12, 12);
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <form action='#' method="post">
+            {% csrf_token %}
+            {% load static %}
+            <center><h1>Welcome :-)</h1></center>
+                <div class="imgcontainer"></div>
+                    <center><img src="{% static 'hey.gif' %}" alt="hey" class="hey" ></center>
+                </div>
+        </form>
+
+    </body>
+</html>
+

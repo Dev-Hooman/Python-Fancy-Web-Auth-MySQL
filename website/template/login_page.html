@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Login page</title>
+</head>
+
+<body>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css'%}">
+    <div class="login-box">
+        <h2>Login</h2>
+        <form action="#" method="post">
+            {% csrf_token %}
+            {% load static %}
+
+            <div class="user-box">
+                <input type="email" name="user_email" required="">
+                <label>Email</label>
+            </div>
+
+            <div class="user-box">
+                <input type="password" name="user_password" required="" >
+                <label>Password</label>
+            </div>
+            
+
+            <a href="">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <button style="padding: 3px;  background-color: transparent; border: 0px solid ; color: #03e9f4; " >LOGIN</button>
+            </a>
+            
+        </form>
+        <center style="color: #03e9f4;">Don't have account <a href="http://localhost:8000/signup/"> Register </a></div></center>
+    </div>
+    
+</body>
+</html>
